@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datafolio + Dashboard</title>
+  <style>
+    :root { --gap: 14px; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, Arial, sans-serif; background:#fff; color:#111; }
+    header { padding:16px 20px; border-bottom:1px solid #eee; }
+    main { display:grid; grid-template-columns:1fr; gap:var(--gap); padding:var(--gap); }
+    .card { border:1px solid #eee; border-radius:14px; overflow:hidden; background:#fff; }
+    .card h2 { margin:0; padding:12px 14px; border-bottom:1px solid #eee; font-size:16px; }
+    .frame { width:100%; height:80vh; border:0; }
+    @media (min-width: 1000px) { main { grid-template-columns:1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Datafolio & Dashboard</h1>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Datafolio (Google Slides)</h2>
+      <!-- For best embedding, use Publish to web → Embed. This URL works too: /embed? -->
+      <iframe
+        class="frame"
+        src="https://docs.google.com/presentation/d/1eCX8_70JCZeqbYEts1HtaXbWl3Zn9ewNLTo4qTygbhA/embed?start=false&loop=false&delayms=3000"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="card">
+      <h2>Dashboard (Looker Studio)</h2>
+      <iframe
+        class="frame"
+        src="https://lookerstudio.google.com/embed/reporting/45a84b9c-2366-45f6-87ee-2abc36b31a29/page/1"
+        allowfullscreen
+      ></iframe>
+    </section>
+  </main>
+</body>
+</html>
